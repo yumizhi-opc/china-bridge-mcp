@@ -1,0 +1,7 @@
+# Smithery configuration — https://smithery.ai/docs/config
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties: {}
+  url: https://mcp.chinawithme.com/mcp
