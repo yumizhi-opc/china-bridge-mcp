@@ -113,7 +113,7 @@ china, sourcing, manufacturing, supplier verification, shipping, visa, factory, 
 
 - Website: [chinawithme.com](https://chinawithme.com)
 - Email: hello@chinawithme.com
-- WhatsApp: [+65 9832 4067](https://wa.me/6598324067)
+
 
 ## License
 
