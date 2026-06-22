@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.yumizhi-opc/china-bridge-mcp",
+  "description": "China sourcing, manufacturing & QC tools: verify Chinese suppliers, estimate shipping, check visa eligibility, find factory clusters, Canton Fair info, and 30+ free bilingual guides. On-the-ground team in Guangdong, China.",
+  "repository": { "url": "https://github.com/yumizhi-opc/china-bridge-mcp", "source": "github" },
+  "version": "3.0.0",
+  "remotes": [
+    { "type": "streamable-http", "url": "https://mcp.chinawithme.com/mcp" }
+  ]
+}
