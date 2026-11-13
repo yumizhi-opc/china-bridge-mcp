@@ -179,9 +179,9 @@ const TOOLS = [
   },
   {
     name: "book_consultation_or_quote",
-    description: "Submit a direct project inquiry, RFQ, or 15-minute consultation request to JING (Stephanie) at China With Me. Triggers an instant notification to the team in Shenzhen & Singapore.",
+    description: "Submit a direct project inquiry or RFQ to JING (Stephanie) at China With Me (reply via Email or WhatsApp). Triggers an instant notification to the team in Shenzhen & Singapore.",
     annotations: {
-      title: "Book Consultation or Request Quote",
+      title: "Send Project Inquiry or Request Quote",
       readOnlyHint: false,
       destructiveHint: false,
       idempotentHint: false,
@@ -437,7 +437,7 @@ export default {
           email: args.email,
           phone: args.phone || "",
           service: args.service || "other",
-          message: `[MCP Direct Booking] ${args.message}`
+          message: `[MCP Direct Inquiry] ${args.message}`
         });
         resultObj = {
           confirmation: "Inquiry submitted to China With Me (JING / Stephanie). We reply within 24 hours.",
