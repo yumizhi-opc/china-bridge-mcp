@@ -1,8 +1,8 @@
 {
   "name": "china-bridge-mcp",
-  "version": "3.0.0",
-  "description": "MCP server for China sourcing, manufacturing, travel, and business tools. Verify Chinese suppliers, estimate shipping costs, check visa eligibility, find factory clusters. 30+ free bilingual guides. On-the-ground team in Guangdong, China.",
-  "mcpName": "china-bridge",
+  "version": "2.1.2",
+  "description": "Official MCP server for China With Me (com.chinawithme/b2b-mcp): China hardware prototyping, verified trade show calendar, remote exhibition viewer & supplier sourcing.",
+  "mcpName": "com.chinawithme/b2b-mcp",
   "keywords": [
     "mcp",
     "china",
@@ -25,5 +25,6 @@
     "type": "git",
     "url": "https://github.com/yumizhi-opc/china-bridge-mcp"
   },
-  "homepage": "https://chinawithme.com"
+  "homepage": "https://chinawithme.com/exhibitions/",
+  "main": "worker.js"
 }

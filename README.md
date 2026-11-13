@@ -1,119 +1,49 @@
-# China Bridge MCP Server
+# China With Me — Hardware Prototyping & Exhibition MCP Server
 
-**AI-native tools for China sourcing, manufacturing, travel, and business.** Verify Chinese suppliers, estimate shipping costs, check visa eligibility, find factory clusters, get free bilingual guides, and request sourcing quotes — all through any MCP-compatible AI agent.
+Official remote MCP server for **[China With Me](https://chinawithme.com)** (`com.chinawithme/b2b-mcp`), hosted on Cloudflare Workers via Streamable HTTP.
 
-[![Smithery](https://smithery.ai/badge/china-bridge)](https://smithery.ai/server/china-bridge)
-
-> Built by [China With Me](https://chinawithme.com) — Jing (bilingual, on-the-ground in Guangdong, China) + Kai (AI partner).
+**Endpoint:** `https://mcp.chinawithme.com/mcp`  
+**Registry ID:** `com.chinawithme/b2b-mcp` (`v2.1.2`)  
+**Consultancy:** JING (Stephanie) & Shenzhen Team · Shenzhen & Singapore (`jing@chinawithme.com`)
 
 ---
 
-## Connect (Remote — No Install Required)
+## Live MCP Tools (`6` Tools)
 
-This server runs as a hosted Cloudflare Worker. Connect directly via Streamable HTTP:
+1. **`search_china_exhibitions`** — Query verified upcoming China B2B trade shows across Shenzhen, Guangzhou, Shanghai, and major hubs (auto-filtered so expired dates never appear).
+2. **`request_remote_exhibition_viewer`** — Book on-the-ground Remote Exhibition Viewer booth walks (`$299/day` or `$799` for 3 days) at any verified show.
+3. **`scope_hardware_prototyping_china`** — Estimate Shenzhen hardware prototyping timelines, supplier pathways, and cost ranges across PCB, CNC, tooling, and assembly.
+4. **`get_services_and_pricing`** — Retrieve current service pillars, pricing structure, and direct consultation details (hardware R&D prototyping, remote exhibition viewer, supplier sourcing & verification, business interpreting, and accredited 3rd-party QC coordination).
+5. **`estimate_aql_inspection`** — Calculate ISO 2859-1 / ANSI ASQ Z1.4 sample sizes and coordinate accredited third-party QC inspection partners (`https://chinawithme.com/qcin/`).
+6. **`book_consultation_or_quote`** — Submit a structured project inquiry or call booking directly to China With Me (`/api/contact` -> KV + Feishu Bitable + instant team alert).
 
-```
-https://mcp.chinawithme.com/mcp
-```
+---
 
-### Claude Desktop
-
-Add to `claude_desktop_config.json`:
+## Connect Any MCP Client (Streamable HTTP)
 
 ```json
 {
   "mcpServers": {
-    "china-bridge": {
+    "china-with-me": {
       "url": "https://mcp.chinawithme.com/mcp"
     }
   }
 }
 ```
 
-### Cursor
-
-Add to MCP settings:
-
-```json
-{
-  "mcpServers": {
-    "china-bridge": {
-      "url": "https://mcp.chinawithme.com/mcp"
-    }
-  }
-}
-```
-
-### Any MCP Client (Streamable HTTP)
+### Quick Health & Discovery Check
 
 ```bash
-# Initialize handshake
-curl -X POST https://mcp.chinawithme.com/mcp \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json, text/event-stream" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-03-26","capabilities":{},"clientInfo":{"name":"test","version":"1.0"}}}'
+curl -sS https://mcp.chinawithme.com/mcp
 ```
 
 ---
 
-## Tools (13)
+## Deploy (Cloudflare Workers)
 
-### Product & Commerce
-
-| Tool | Description |
-|------|-------------|
-| `search_products` | Search all products across all brands by keyword, age, category, or price range |
-| `get_product` | Get detailed information about a specific product by ID |
-| `get_catalog` | Get the full product catalog across all brands |
-| `get_recommendations` | Get personalized product recommendations based on user needs |
-| `create_checkout` | Initiate an agentic checkout via Stripe ACP (Agentic Commerce Protocol) |
-
-### China Sourcing & Business
-
-| Tool | Description |
-|------|-------------|
-| `verify_chinese_supplier` | Verify a Chinese manufacturer or supplier using business registration number, Alibaba URL, or company name. Returns registration status, capital, legal rep, business scope, and red flags via Tianyancha/Qichacha |
-| `estimate_china_shipping_cost` | Estimate shipping cost from Chinese cities (Shenzhen, Guangzhou, Yiwu, etc.) to any global destination. Supports air, sea (FCL/LCL), and rail freight |
-| `check_china_visa_eligibility` | Check visa requirements for traveling to China — visa type, transit visa-free eligibility (144h/72h), Hainan 30-day visa-free, required documents |
-| `get_factory_cluster_info` | Get info about Chinese manufacturing clusters by product category — primary city, factory density, MOQs, price ranges, nearest ports, quality tiers |
-| `request_sourcing_quote` | Submit a sourcing request to our on-the-ground team in Guangdong. Get 3-5 factory quotes within 48-72 hours |
-
-### Guides & Services
-
-| Tool | Description |
-|------|-------------|
-| `get_china_guide` | Get a free bilingual guide on 30+ China topics: payments (WeChat/Alipay), supplier verification, travel budget, visa rules, VPN, SIM cards, train booking. Available in English, Spanish, Arabic, French |
-| `search_china_services` | Search available paid services: supplier verification ($99), sourcing consultation ($75/hr), Mandarin negotiation ($75/hr), factory inspection ($199) |
-| `request_service` | Book a paid China Bridge service with pricing, timeline, and direct contact |
-
----
-
-## Paid Services (via tools)
-
-| Service | Price | Delivery |
-|---------|-------|----------|
-| Supplier Verification Report | $99 | 48 hours |
-| Sourcing Consultation | $75/hr | Live session |
-| Mandarin Negotiation Support | $75/hr | Live session |
-| Pre-Shipment Factory Inspection | $199 | 5 business days |
-
-All services delivered by Jing (bilingual, based in Guangdong, China).
-
----
-
-## Keywords
-
-china, sourcing, manufacturing, supplier verification, shipping, visa, factory, canton fair, import, export, Shenzhen, Guangzhou, Yiwu, Dongguan, Foshan, Alibaba, Tianyancha, MCP, agentic commerce
-
----
-
-## About
-
-**China With Me** bridges the gap between global buyers and Chinese manufacturers. We combine on-the-ground expertise (Jing, based in Guangdong) with AI-powered research (Kai) to make China sourcing accessible to anyone.
-
-- Website: [chinawithme.com](https://chinawithme.com)
-- Email: hello@chinawithme.com
-
+```bash
+npx wrangler deploy
+```
 
 ## License
 
