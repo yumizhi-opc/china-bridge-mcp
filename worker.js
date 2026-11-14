@@ -34,7 +34,8 @@ const SERVICES_CATALOG = [
     summary: "End-to-end hardware project & product management in Shenzhen and Dongguan: CNC-machined aluminium enclosures, anodizing, injection molding, PCBA/EMS, robotics chassis, optical/thermal/mmWave sensor integration, and small-batch EVT/DVT/PVT pilot runs (10–100+ units).",
     pricing: {
       feasibility_and_dfm_review_usd: 499,
-      turnkey_prototype_sprint_from_usd: 1500,
+      turnkey_prototype_sprint_from_usd: 4500,
+      typical_4_to_6_week_evt_dvt_sprint_range_usd: "4500-7500",
       on_site_engineering_management_per_day_usd: 450,
       post_visit_30day_execution_support_usd: 800
     }
@@ -60,8 +61,9 @@ const SERVICES_CATALOG = [
     summary: "Government registry & ISO verification, direct factory shortlisting, on-site capability audits, and coordination with accredited 3rd-party QC inspection partners across Guangdong, Zhejiang, Jiangsu, and Fujian.",
     pricing: {
       supplier_background_verification_usd: 149,
-      turnkey_sourcing_shortlist_usd: 299,
       on_site_factory_audit_usd: 399,
+      turnkey_sourcing_sprint_from_usd: 1200,
+      sourcing_sprint_scope: "Vetted 3-5 factory shortlist, GSXT due diligence & Mandarin FOB negotiation",
       third_party_qc_partner_coordination: "Referred & coordinated via accredited 3rd-party partner agencies"
     }
   },
