@@ -1,5 +1,7 @@
 # China With Me — Hardware Prototyping & Exhibition MCP Server
 
+[![mcptry](https://mcptry.com/badge/com.chinawithme/b2b-mcp)](https://mcptry.com/servers/com.chinawithme/b2b-mcp)
+
 Official remote MCP server for **[China With Me](https://chinawithme.com)** (`com.chinawithme/b2b-mcp`), hosted on Cloudflare Workers via Streamable HTTP.
 
 **Endpoint:** `https://mcp.chinawithme.com/mcp`  
