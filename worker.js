@@ -264,22 +264,32 @@ function scopePrototyping(args = {}) {
     manufacturing_tier_strategy: tierAdvice,
     recommended_engagement_structure: [
       {
-        phase: "Phase 1 — Pre-Arrival Technical Screening, Supplier Shortlisting & DFM Prep (Remote)",
-        fee_usd: 800,
-        deliverables: "Verify 5–10 candidate factories in Shenzhen/Dongguan, evaluate small-batch MOQ flexibility, check enclosure/sensor/PCBA capabilities, and build a prioritized shortlist."
+        phase: "Option A — Turnkey R&D Prototyping Sprint (4–6 Weeks, Zero Travel Required)",
+        fee_usd: "From $4,500 USD (typical EVT/DVT range $4,500–$7,500)",
+        deliverables: "DFM/DFA pre-fab audit, 2–3 vetted Bao'an/Dongguan prototyping partners, two iterative EVT hardware builds, production-ready BOM & bilingual NNN/tooling ownership clauses."
       },
       {
-        phase: "Phase 2 — On-Site Factory Audits, Engineering Reviews & Prototyping Management",
-        fee_usd: "$450 / working day (40% deposit to reserve dates, 60% at end of trip)",
-        deliverables: "In-person factory audits, face-to-face engineering & DFM alignment, live workshop inspection, and commercial/IP term negotiation."
+        phase: "Option B — Supplier Sourcing & GSXT Verification Sprint (4–6 Weeks)",
+        fee_usd: "From $1,200 USD",
+        deliverables: "3–5 direct factory shortlists checked on gsxt.gov.cn (paid-in capital, litigation, real manufacturing scope), Mandarin FOB negotiation & 3rd-party AQL QC coordination."
       },
       {
-        phase: "Phase 3 — 30-Day Post-Visit Sample Follow-Up & Quotation Verification",
-        fee_usd: "$800 (payable prior to start of 30-day Phase 3 period)",
-        deliverables: "Track BOM/FOB quotes, coordinate prototype sample build adjustments, inspect golden samples before dispatch, and prepare handover documentation."
+        phase: "Option C — Remote Exhibition Viewer (Canton Fair, CHTF, DMP & 140+ Expos)",
+        fee_usd: "$299 / day ($799 / 3-day full-show sprint)",
+        deliverables: "Live booth walks across Shenzhen, Guangzhou & Shanghai, Mandarin engineering & MOQ Q&A, sample pickup and structured 48-hour comparison report."
       }
     ],
-    next_step: "Call tool `book_consultation_or_quote` with service='rd-prototyping' or contact Stephanie directly at jing@chinawithme.com / WhatsApp +65 8965 9241."
+    free_playbooks: [
+      {
+        title: "Shenzhen Hardware Prototyping Playbook (2026–2027, 18-Page PDF)",
+        url: "https://chinawithme.com/prototypein/shenzhen-prototyping-playbook"
+      },
+      {
+        title: "Shenzhen Hardware Founder Playbook: Operating as a Foreigner (2026–2027, 17-Page PDF)",
+        url: "https://chinawithme.com/prototypein/shenzhen-hardware-founder-playbook"
+      }
+    ],
+    next_step: "Call tool `book_consultation_or_quote` with service='rd-prototyping' or contact JING at hello@chinawithme.com / WhatsApp +65 8965 9241."
   };
 }
 
@@ -351,6 +361,10 @@ export default {
         priority_pillars: [
           "1. Hardware R&D & Prototyping in China (https://chinawithme.com/prototypein/)",
           "2. Remote Exhibition Viewer & China Exhibition Directory (https://chinawithme.com/exhibitions/ & https://chinawithme.com/trade-show-visit-on-behalf-china)"
+        ],
+        flagship_playbooks: [
+          "https://chinawithme.com/prototypein/shenzhen-prototyping-playbook",
+          "https://chinawithme.com/prototypein/shenzhen-hardware-founder-playbook"
         ],
         tools: TOOLS.map(t => ({ name: t.name, description: t.description }))
       }, null, 2), { status: 200, headers: corsHeaders() });
