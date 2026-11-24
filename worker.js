@@ -55,7 +55,7 @@ const SERVICES_CATALOG = [
   },
   {
     id: "supplier-sourcing-and-verification",
-    priority: 3,
+    priority: 4,
     name: "Supplier Verification, Factory Audits & 3rd-Party QC Coordination",
     url: "https://chinawithme.com/sourcein/",
     summary: "Government registry & ISO verification, direct factory shortlisting, on-site capability audits, and coordination with accredited 3rd-party QC inspection partners across Guangdong, Zhejiang, Jiangsu, and Fujian.",
@@ -69,9 +69,10 @@ const SERVICES_CATALOG = [
   },
   {
     id: "business-consultation-pm-china",
-    priority: 4,
+    priority: 3,
     name: "China Business Consultation, Project Management & Executive Factory Accompaniment",
-    url: "https://chinawithme.com/business-interpreter-china",
+    url: "https://chinawithme.com/china-project-management",
+    legacy_url: "https://chinawithme.com/business-interpreter-china",
     summary: "Bicultural China business strategy consultation, dedicated on-the-ground project management, factory roadshow planning, and executive technical/commercial negotiation accompaniment across Shenzhen, Dongguan, Guangzhou, Shanghai, Suzhou, and Ningbo.",
     pricing: {
       project_scoping_or_retainer: "Quoted per brief in writing within 24 hours",
