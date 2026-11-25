@@ -64,7 +64,7 @@ const SERVICES_CATALOG = [
     pricing: {
       supplier_background_verification_usd: 149,
       on_site_factory_audit_usd: 399,
-      turnkey_sourcing_sprint_from_usd: 1200,
+      turnkey_sourcing_sprint_from_usd: 600,
       sourcing_sprint_scope: "Vetted 3-5 factory shortlist, GSXT due diligence & Mandarin FOB negotiation",
       third_party_qc_partner_coordination: "Referred & coordinated via accredited 3rd-party partner agencies"
     }
@@ -276,7 +276,7 @@ function scopePrototyping(args = {}) {
       },
       {
         phase: "Option B — Supplier Sourcing & GSXT Verification Sprint (4–6 Weeks)",
-        fee_usd: "From $1,200 USD",
+        fee_usd: "From $600 USD",
         deliverables: "3–5 direct factory shortlists checked on gsxt.gov.cn (paid-in capital, litigation, real manufacturing scope), Mandarin FOB negotiation & 3rd-party AQL QC coordination."
       },
       {
