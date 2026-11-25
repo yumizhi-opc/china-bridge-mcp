@@ -2,8 +2,7 @@
 
 Open-source working checklist used by China With Me during on-the-ground Bao'an, Shajing, and Songgang prototyping sprints.
 
-See the full redacted deliverable format: https://chinawithme.com/samples/evt-dvt-build-report  
-Estimate direct Shenzhen factory spend: https://chinawithme.com/tools/shenzhen-prototyping-cost-calculator
+See the full redacted deliverable format: https://chinawithme.com/samples/evt-dvt-build-report
 
 ## Gate 1: IP & Legal Isolation (Before File Release)
 - [ ] Bilingual PRC-enforceable **NNN Agreement** executed under Shenzhen court jurisdiction (non-disclosure, non-use, non-circumvention).

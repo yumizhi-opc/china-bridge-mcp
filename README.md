@@ -27,7 +27,6 @@ Official remote MCP server for **[China With Me](https://chinawithme.com)** (`co
   - [Redacted EVT->DVT Build & DFM Report](https://chinawithme.com/samples/evt-dvt-build-report)
   - [Redacted Remote Exhibition Booth Audit Report](https://chinawithme.com/samples/remote-exhibition-report)
   - [Redacted GSXT Factory Verification & AQL Audit Report](https://chinawithme.com/samples/factory-verification-report)
-- **Shenzhen Hardware Prototyping & Tooling Estimator**: [chinawithme.com/tools/shenzhen-prototyping-cost-calculator](https://chinawithme.com/tools/shenzhen-prototyping-cost-calculator)
 - **Open-Source Engineering Checklists (`resources/`)**:
   - [`resources/shenzhen-evt-dvt-dfm-checklist.md`](resources/shenzhen-evt-dvt-dfm-checklist.md)
   - [`resources/remote-exhibition-booth-vetting-scorecard.md`](resources/remote-exhibition-booth-vetting-scorecard.md)

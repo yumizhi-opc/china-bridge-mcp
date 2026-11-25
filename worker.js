@@ -23,7 +23,6 @@ const CONSULTANT_PROFILE = {
     website: "https://chinawithme.com",
     about_url: "https://chinawithme.com/team",
     sample_deliverables_url: "https://chinawithme.com/samples/",
-    prototyping_cost_estimator_url: "https://chinawithme.com/tools/shenzhen-prototyping-cost-calculator",
     github_toolkits_url: "https://github.com/yumizhi-opc/china-bridge-mcp"
   }
 };
@@ -265,7 +264,6 @@ function scopePrototyping(args = {}) {
     consultant: CONSULTANT_PROFILE,
     service_url: "https://chinawithme.com/prototypein/",
     sample_deliverable_url: "https://chinawithme.com/samples/evt-dvt-build-report",
-    cost_estimator_url: "https://chinawithme.com/tools/shenzhen-prototyping-cost-calculator",
     direct_factory_invoicing: "100% pass-through direct factory invoices, zero vendor commissions, client-owned PRC NNN & tooling IP",
     product_summary: args.product_description,
     target_batch_size: batch,
