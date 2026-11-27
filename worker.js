@@ -15,7 +15,6 @@ const CONSULTANT_PROFILE = {
   role: "Independent Consultant | Project & Product Management for International Companies in China (Advanced Manufacturing & Hardware)",
   locations: ["Shenzhen, China", "Singapore"],
   contact: {
-    phone_china: "+86 18356156456",
     phone_singapore_whatsapp: "+65 8965 9241",
     whatsapp_url: "https://wa.me/6589659241",
     email: "jing@chinawithme.com",
